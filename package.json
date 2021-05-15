@@ -1,0 +1,23 @@
+{
+  "name": "hello-world-nodejs",
+  "version": "1.0.0",
+  "description": "my first nodejs server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "chmod +x ./build.sh && ./build.sh && tar -cvzf hello-node.tar.gz dist/* && rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shashikiran27497/hello-world-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shashikiran27497/hello-world-nodejs/issues"
+  },
+  "homepage": "https://github.com/Shashikiran27497/hello-world-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
