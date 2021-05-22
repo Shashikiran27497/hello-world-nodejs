@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "chmod +x ./build.sh && ./build.sh && tar -cvzf hello-node.tar.gz dist/* && rm -rf dist",
-    "builddockerimage": "cp index.js docker/ && cp package.json docker/ && docker build -f docker/Dockerfile -t shashi27/hello-world-nodejs:latest --build-arg ARCH=linux/amd64 . && docker push shashi27/hello-world-nodejs:latest"
+    "builddockerimage": "cp index.js docker/ && cp package.json docker/ && docker build --build-arg ARCH=linux/amd64 -f docker/Dockerfile -t shashi27/hello-world-nodejs:latest . && docker push shashi27/hello-world-nodejs:latest"
   },
   "repository": {
     "type": "git",
